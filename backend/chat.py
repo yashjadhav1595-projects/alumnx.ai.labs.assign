@@ -38,6 +38,8 @@ def handle_chat_request(candidate_id: str, query_text: str, db: Session) -> Dict
     Determine if this question requires querying our database of processed emails and tasks.
     If the user asks to DO something (e.g., "send an email"), set is_out_of_scope to true.
     If the user asks about something we don't track, set is_out_of_scope to true.
+    
+    IMPORTANT for keyword_search: Only use keyword_search for specific entities (like a company name, invoice number, or specific phrase). DO NOT use keyword_search for broad concepts like "pipeline", "overview", or "summary" as it will result in 0 matches. For broad concepts, leave all filters null to fetch everything.
     """
     
     try:
