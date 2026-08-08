@@ -56,7 +56,7 @@ async def classify_email_async(email_data: dict, sem: asyncio.Semaphore) -> Emai
         # We use run_in_executor here if client.aio is not fully supported or throws loop errors, 
         # but the latest google-genai supports asyncio directly via client.aio
         response = await client.aio.models.generate_content(
-            model='gemini-2.5-flash',
+            model='gemini-1.5-flash',
             contents=prompt,
             config=types.GenerateContentConfig(
                 response_mime_type="application/json",
