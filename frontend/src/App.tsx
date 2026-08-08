@@ -6,7 +6,7 @@ import { TaskRow } from './components/TaskRow';
 import { RoutingExplanation } from './components/RoutingExplanation';
 
 const CANDIDATE_ID = "priya.sharma@gmail.com";
-const API_BASE = "http://localhost:8000";
+const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
 export default function App() {
   const [jsonInput, setJsonInput] = useState('');
