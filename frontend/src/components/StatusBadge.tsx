@@ -1,4 +1,3 @@
-import React from 'react';
 
 export type Status = 'routed' | 'skipped' | 'triage' | 'error' | 'new' | 'updated';
 
