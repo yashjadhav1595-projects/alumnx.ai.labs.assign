@@ -144,7 +144,7 @@ def handle_chat_request(candidate_id: str, query_text: str, db: Session) -> Dict
     
     try:
         answer_response = client.models.generate_content(
-            model='gemini-1.5-flash',
+            model='gemini-3.5-flash',
             contents=answer_prompt,
             config=types.GenerateContentConfig(
                 temperature=0.1
