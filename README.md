@@ -5,8 +5,8 @@
 This project is an automated sales inbox router designed for a B2B services company. It ingests a stream of emails, uses Large Language Models (LLMs) to extract structured semantic facts, and then applies deterministic Python business rules to assign priorities, categories, and owners. 
 
 ### Live Demos
-- **Frontend**: [DEPLOYED_FRONTEND_URL]
-- **Backend API**: [DEPLOYED_BACKEND_URL]
+- **Frontend**: https://alumnx-ai-labs-assign1.vercel.app/
+- **Backend API**: https://alumnx-ai-labs-assign.onrender.com
 
 ---
 
