@@ -42,7 +42,7 @@ def handle_chat_request(candidate_id: str, query_text: str, db: Session) -> Dict
     
     try:
         plan_response = client.models.generate_content(
-            model='gemini-2.5-flash',
+            model='gemini-flash-lite-latest',
             contents=plan_prompt,
             config=types.GenerateContentConfig(
                 response_mime_type="application/json",
@@ -144,7 +144,7 @@ def handle_chat_request(candidate_id: str, query_text: str, db: Session) -> Dict
     
     try:
         answer_response = client.models.generate_content(
-            model='gemini-3.5-flash',
+            model='gemini-flash-lite-latest',
             contents=answer_prompt,
             config=types.GenerateContentConfig(
                 temperature=0.1

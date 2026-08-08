@@ -56,7 +56,7 @@ async def classify_email_async(email_data: dict, sem: asyncio.Semaphore) -> Emai
         # Use asyncio.to_thread to avoid aio event loop bugs with module-level client
         response = await asyncio.to_thread(
             client.models.generate_content,
-            model='gemini-3.5-flash',
+            model='gemini-flash-lite-latest',
             contents=prompt,
             config=types.GenerateContentConfig(
                 response_mime_type="application/json",
