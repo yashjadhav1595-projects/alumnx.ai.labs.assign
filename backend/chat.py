@@ -142,6 +142,10 @@ def handle_chat_request(candidate_id: str, query_text: str, db: Session) -> Dict
     If the data shows zero matches for their query, state clearly that there are zero matches.
     If the data is insufficient to answer completely, explain what you can answer and what is missing.
     Do NOT invent or guess numbers, names, or dates.
+    
+    IMPORTANT FORMATTING RULE: 
+    Do NOT use Markdown formatting (no asterisks for bold/italics, no hashtag headers). 
+    Format your response as a clean, simple plain text paragraph. Use standard numbering (1., 2.) if you must list items, but do not use markdown bullet points (*).
     """
     
     try:
