@@ -7,7 +7,7 @@ This project is an automated sales inbox router designed for a B2B services comp
 ### Live Demos
 - **Frontend**: https://alumnx-ai-labs-assign1.vercel.app/
 - **Backend API**: https://alumnx-ai-labs-assign.onrender.com
-
+- **Video Explanation** : https://youtu.be/tmArzskNiCU
 ---
 
 ## Technical Pillars (FDE Architecture)
