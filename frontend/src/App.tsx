@@ -5,7 +5,7 @@ import ChatPanel from './ChatPanel';
 import { TaskRow } from './components/TaskRow';
 import { RoutingExplanation } from './components/RoutingExplanation';
 
-const CANDIDATE_ID = "priya.sharma@gmail.com";
+const CANDIDATE_ID = "yashjadhav.career@gmail.com";
 const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
 export default function App() {
